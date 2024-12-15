@@ -1,0 +1,2016 @@
+{
+  "remarks": "Dadashi VPN use it !!",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "hosts": {
+      "geosite:category-ads-all": [
+        "127.0.0.1"
+      ],
+      "geosite:category-ads-ir": [
+        "127.0.0.1"
+      ],
+      "geosite:category-porn": [
+        "127.0.0.1"
+      ]
+    },
+    "servers": [
+      "https://8.8.8.8/dns-query",
+      {
+        "address": "8.8.8.8",
+        "domains": [
+          "full:8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+          "full:www.speedtest.net"
+        ],
+        "skipFallback": true
+      },
+      {
+        "address": "8.8.8.8",
+        "domains": [
+          "geosite:category-ir"
+        ],
+        "expectIPs": [
+          "geoip:ir"
+        ],
+        "skipFallback": true
+      }
+    ],
+    "queryStrategy": "UseIPv4",
+    "tag": "dns"
+  },
+  "inbounds": [
+    {
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "socks-in"
+    },
+    {
+      "port": 10809,
+      "protocol": "http",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "http-in"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10853,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "1.1.1.1",
+        "network": "tcp,udp",
+        "port": 53
+      },
+      "tag": "dns-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/srpY8R7fs7YBw9hR/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-COLD-HEart-85b9.alI-R-MOdP.WorkeRS.DeV"
+        }
+      },
+      "tag": "prox-1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/RkOaCd7NsfF1DokQ/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360ff-COLD-hEART-85B9.aLI-R-ModP.wORkerS.DEV"
+        }
+      },
+      "tag": "prox-2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.48.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/SKy27lbs7h0TQsEr/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360fF-coLd-hearT-85b9.aLi-r-MoDp.WorKERS.Dev"
+        }
+      },
+      "tag": "prox-3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.112.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/kgAuHiNAFwIaIjpd/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-colD-heART-85b9.ALI-R-MoDP.WORKErs.DEv"
+        }
+      },
+      "tag": "prox-4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.80.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/0pHhffJE7rEcJI1u/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-Cold-heart-85b9.alI-r-moDP.WOrKERS.DEV"
+        }
+      },
+      "tag": "prox-5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.64.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/lPIAyL8Ld6CSUweV/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360ff-ColD-heArt-85B9.aLI-r-MODp.wOrKeRS.DEv"
+        }
+      },
+      "tag": "prox-6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.32.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/dL2nJJ2CUY7sSKvn/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360FF-cOld-HeaRt-85B9.ali-r-mODp.wORKERs.DeV"
+        }
+      },
+      "tag": "prox-7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.16.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/KdPQqGG5vKMTAkg9/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360fF-cold-heart-85b9.ALi-r-MODp.workeRS.DEV"
+        }
+      },
+      "tag": "prox-8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.96.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/rbUAPB8vjxBMjQ7g/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360fF-COLD-HEaRt-85B9.ALI-R-moDP.wORKerS.deV"
+        }
+      },
+      "tag": "prox-9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.0.113",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/dxEmoVG3lJSrPxpZ/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-cOlD-heaRT-85b9.ALi-r-MoDp.WOrkERS.dEv"
+        }
+      },
+      "tag": "prox-10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.236.170",
+            "port": 443,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/gt3HmQvjX9pikM1D/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360FF-CoLd-heaRT-85B9.ALI-R-MODp.WoRkerS.deV"
+        }
+      },
+      "tag": "prox-11"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/lVilXWrEXYi0mfXY/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-COLD-HEaRT-85b9.AlI-r-MODp.wORkErS.Dev"
+        }
+      },
+      "tag": "prox-12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/xTq1IXaU9qXxVS2o/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-cOLd-heaRT-85b9.Ali-r-modP.WOrkerS.dEv"
+        }
+      },
+      "tag": "prox-13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.48.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/23Xts1kGgY32laqh/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360Ff-Cold-HEART-85B9.Ali-R-mODP.woRKErs.DEv"
+        }
+      },
+      "tag": "prox-14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.112.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/XM9f8z2Y0cv4lcPs/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360ff-coLD-HeaRT-85B9.Ali-R-mODp.WOrKERS.DeV"
+        }
+      },
+      "tag": "prox-15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.80.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/bY7FjP8T6zwAuJ2N/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360Ff-CoLD-HEArT-85b9.alI-r-mODp.woRkeRS.DEV"
+        }
+      },
+      "tag": "prox-16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.64.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/vKiobFxB57s3bJUf/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360Ff-COlD-HeArT-85B9.aLi-r-modP.workERs.dev"
+        }
+      },
+      "tag": "prox-17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.32.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/8bNT3QAMx4Vfh9FW/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360fF-coLD-hEArT-85B9.Ali-R-MODP.WoRKerS.deV"
+        }
+      },
+      "tag": "prox-18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.16.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/YLFxpfZKDnU8XHit/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-Cold-HeArt-85B9.AlI-r-modP.WorKeRs.dev"
+        }
+      },
+      "tag": "prox-19"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.96.1",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/nD3HKzapDN1eHT7u/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-cold-HearT-85b9.ALi-R-MoDP.WORkErS.DEv"
+        }
+      },
+      "tag": "prox-20"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.0.113",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/hFixvvBg78V3Zn0A/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360fF-CoLD-hEaRT-85b9.Ali-R-ModP.wOrKErs.Dev"
+        }
+      },
+      "tag": "prox-21"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.236.170",
+            "port": 2053,
+            "users": [
+              {
+                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+          },
+          "path": "/PZgABQN02Ydhkbyg/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360FF-colD-hEArt-85B9.ALI-r-mODp.WORKErS.Dev"
+        }
+      },
+      "tag": "prox-22"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/tryN6TPbt7FZppaFxS/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360ff-CoLd-HEArt-85b9.aLi-R-MODp.woRkErS.DEv"
+        }
+      },
+      "tag": "prox-23"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.speedtest.net",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trrIOXF6i9iFn104EK/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360Ff-cOLd-hEArT-85B9.AlI-R-mOdP.WOrKeRS.DEV"
+        }
+      },
+      "tag": "prox-24"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.48.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trF4gARDC6Zab5pOBK/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-Cold-HEArT-85b9.ALI-R-ModP.WOrKErS.dEv"
+        }
+      },
+      "tag": "prox-25"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.112.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trApblD1XgrhjUe8vH/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360FF-coLd-HEARt-85B9.aLi-r-Modp.wOrkErS.DEv"
+        }
+      },
+      "tag": "prox-26"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.80.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/tryk5PTovdi4qtaghM/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-coLd-heaRT-85b9.alI-r-moDp.wORKers.DeV"
+        }
+      },
+      "tag": "prox-27"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.64.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trBiqKCrOkAvYEF78e/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360ff-CoLd-HEarT-85b9.ALI-R-MODP.wOrkERS.dEv"
+        }
+      },
+      "tag": "prox-28"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.32.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trroMdje2wrgEQmcwQ/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-cOld-HEaRt-85B9.AlI-r-MODP.workErS.dev"
+        }
+      },
+      "tag": "prox-29"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.16.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trDsMfWoNBrMO7cJD5/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360Ff-CoLD-hEaRt-85B9.Ali-r-MOdp.workErS.dEv"
+        }
+      },
+      "tag": "prox-30"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.96.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trmN4NdgTyqr6L2xP7/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-coLd-HeARt-85b9.ALi-r-MOdp.woRKErs.deV"
+        }
+      },
+      "tag": "prox-31"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.0.113",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trf0z5PBP2i33RvENc/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-coLd-HEaRt-85b9.aLi-R-mOdp.wORKERs.dEv"
+        }
+      },
+      "tag": "prox-32"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.236.170",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trc7JbmJF1JU1cd5Fy/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-CoLD-hEaRT-85B9.AlI-R-MoDp.wOrKeRs.Dev"
+        }
+      },
+      "tag": "prox-33"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trK73acHj22rRoVY5v/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360ff-COld-HeArt-85B9.AlI-R-MOdp.woRKerS.dEV"
+        }
+      },
+      "tag": "prox-34"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.speedtest.net",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trjIf5TjK4BJj6lTak/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-cOld-HeaRT-85B9.ALI-R-ModP.WORkErs.DEv"
+        }
+      },
+      "tag": "prox-35"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.48.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trIifaDr69x4NoYVmM/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360Ff-ColD-hEArT-85B9.Ali-R-mOdP.workErS.dev"
+        }
+      },
+      "tag": "prox-36"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.112.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trlGBB7jIggZyB6HpA/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360ff-COld-heArt-85B9.ALI-r-mOdP.WorKErS.Dev"
+        }
+      },
+      "tag": "prox-37"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.80.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trm4knKZ8tMkBkvLtq/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360Ff-cOlD-hEaRt-85b9.AlI-r-modP.WorKERs.Dev"
+        }
+      },
+      "tag": "prox-38"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.64.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trA0XV6lw8k5XyAdnI/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360FF-cOLD-hEART-85b9.Ali-R-mOdp.WOrkERS.DEv"
+        }
+      },
+      "tag": "prox-39"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.32.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trc7g7TH6qynltgoCz/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360fF-cOLD-hearT-85B9.ali-r-mOdp.WorKErs.dev"
+        }
+      },
+      "tag": "prox-40"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.16.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trdHlANlB0o5qdW7w1/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360ff-COLD-heaRt-85B9.alI-r-mODP.WorKERs.dEV"
+        }
+      },
+      "tag": "prox-41"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.96.1",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/triJgwkPa4bziZoA2z/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360ff-COlD-HEart-85b9.Ali-R-moDP.WorKeRS.Dev"
+        }
+      },
+      "tag": "prox-42"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.0.113",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trj5AnDGoga0xCNmqx/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8E6360FF-coLd-HeART-85B9.AlI-R-mOdP.woRKERS.deV"
+        }
+      },
+      "tag": "prox-43"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.16.236.170",
+            "port": 2053,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "tcpKeepAliveIdle": 30,
+          "tcpNoDelay": true,
+          "domainStrategy": "UseIPv4"
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
+          },
+          "path": "/trYthv8tr3tT5Hn7nX/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "serverName": "8e6360fF-ColD-hEart-85b9.ALi-R-MOdP.WorkeRS.deV"
+        }
+      },
+      "tag": "prox-44"
+    },
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {},
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "inboundTag": [
+          "dns-in"
+        ],
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "socks-in",
+          "http-in"
+        ],
+        "port": "53",
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "8.8.8.8"
+        ],
+        "port": "53",
+        "network": "udp",
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:private",
+          "geosite:category-ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private",
+          "geoip:ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:category-ads-all",
+          "geosite:category-ads-ir",
+          "geosite:category-porn"
+        ],
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "network": "udp",
+        "port": "443",
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "network": "tcp,udp",
+        "balancerTag": "all",
+        "type": "field"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "all",
+        "selector": [
+          "prox"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "fallbackTag": "prox-2"
+      }
+    ]
+  },
+  "observatory": {
+    "probeInterval": "30s",
+    "probeURL": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "prox"
+    ],
+    "EnableConcurrency": true
+  },
+  "stats": {}
+}
