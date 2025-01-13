@@ -1,5 +1,5 @@
 {
-  "remarks": "Dadashi VPN use it !!",
+  "remarks": "New config",
   "log": {
     "loglevel": "warning"
   },
@@ -36,7 +36,7 @@
         "skipFallback": true
       }
     ],
-    "queryStrategy": "UseIPv4",
+    "queryStrategy": "UseIP",
     "tag": "dns"
   },
   "inbounds": [
@@ -110,16 +110,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/srpY8R7fs7YBw9hR/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/Znouh08PtMUShk5B/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -128,7 +126,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-COLD-HEart-85b9.alI-R-MOdP.WorkeRS.DeV"
+          "serverName": "8E6360fF-coLd-heaRt-85B9.alI-r-MODp.woRkERs.DEv"
         }
       },
       "tag": "prox-1"
@@ -154,16 +152,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/RkOaCd7NsfF1DokQ/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/sjhm3GYrYmy7Li8x/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -172,7 +168,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360ff-COLD-hEART-85B9.aLI-R-ModP.wORkerS.DEV"
+          "serverName": "8e6360FF-colD-HEART-85b9.aLI-R-mOdP.wORKers.deV"
         }
       },
       "tag": "prox-2"
@@ -182,7 +178,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.48.1",
+            "address": "104.21.32.1",
             "port": 443,
             "users": [
               {
@@ -198,16 +194,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/SKy27lbs7h0TQsEr/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/otqjXPSbNTxQMCjE/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -216,7 +210,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360fF-coLd-hearT-85b9.aLi-r-MoDp.WorKERS.Dev"
+          "serverName": "8e6360FF-CoLD-HEArT-85b9.alI-R-mOdp.wOrkeRs.DeV"
         }
       },
       "tag": "prox-3"
@@ -226,7 +220,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.112.1",
+            "address": "104.21.96.1",
             "port": 443,
             "users": [
               {
@@ -242,16 +236,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/kgAuHiNAFwIaIjpd/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/uKO7OnRKZPPf7K4I/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -260,7 +252,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360fF-colD-heART-85b9.ALI-R-MoDP.WORKErs.DEv"
+          "serverName": "8E6360ff-ColD-hEaRt-85b9.ALI-R-MOdp.WorkeRs.DeV"
         }
       },
       "tag": "prox-4"
@@ -270,7 +262,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.80.1",
+            "address": "104.21.64.1",
             "port": 443,
             "users": [
               {
@@ -286,16 +278,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/0pHhffJE7rEcJI1u/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/oI86YZFoAeDDlB3f/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -304,7 +294,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-Cold-heart-85b9.alI-r-moDP.WOrKERS.DEV"
+          "serverName": "8E6360ff-coLd-hEaRt-85B9.Ali-r-mODp.WoRKERS.dEv"
         }
       },
       "tag": "prox-5"
@@ -314,7 +304,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.64.1",
+            "address": "104.21.112.1",
             "port": 443,
             "users": [
               {
@@ -330,16 +320,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/lPIAyL8Ld6CSUweV/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/KC3K1fJe38bHe6je/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -348,7 +336,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360ff-ColD-heArt-85B9.aLI-r-MODp.wOrKeRS.DEv"
+          "serverName": "8e6360ff-COLD-hEaRT-85B9.ali-r-ModP.WOrkErs.dev"
         }
       },
       "tag": "prox-6"
@@ -358,7 +346,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.32.1",
+            "address": "104.21.48.1",
             "port": 443,
             "users": [
               {
@@ -374,16 +362,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/dL2nJJ2CUY7sSKvn/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/b6dyt6C35ceHdfZn/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -392,7 +378,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360FF-cOld-HeaRt-85B9.ali-r-mODp.wORKERs.DeV"
+          "serverName": "8E6360Ff-COlD-heArt-85B9.Ali-R-Modp.WoRkERS.Dev"
         }
       },
       "tag": "prox-7"
@@ -402,7 +388,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.16.1",
+            "address": "104.21.80.1",
             "port": 443,
             "users": [
               {
@@ -418,16 +404,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/KdPQqGG5vKMTAkg9/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/wxjcvkGo6kMBTsea/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -436,7 +420,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360fF-cold-heart-85b9.ALi-r-MODp.workeRS.DEV"
+          "serverName": "8e6360Ff-cOld-HearT-85b9.ALi-r-moDp.WOrKerS.dev"
         }
       },
       "tag": "prox-8"
@@ -446,7 +430,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.96.1",
+            "address": "104.21.16.1",
             "port": 443,
             "users": [
               {
@@ -462,16 +446,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/rbUAPB8vjxBMjQ7g/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/O1kxP7BOCHgm5Q1l/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -480,7 +462,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360fF-COLD-HEaRt-85B9.ALI-R-moDP.wORKerS.deV"
+          "serverName": "8e6360FF-ColD-HEaRT-85B9.ALi-r-mOdP.wORkerS.DEv"
         }
       },
       "tag": "prox-9"
@@ -490,7 +472,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.0.113",
+            "address": "[2606:4700:3030::6815:6001]",
             "port": 443,
             "users": [
               {
@@ -506,16 +488,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/dxEmoVG3lJSrPxpZ/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/oxqfZEU2NXgB9eeR/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -524,7 +504,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-cOlD-heaRT-85b9.ALi-r-MoDp.WOrkERS.dEv"
+          "serverName": "8E6360FF-cold-hEaRT-85b9.Ali-R-moDP.wOrkeRS.DeV"
         }
       },
       "tag": "prox-10"
@@ -534,7 +514,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.16.236.170",
+            "address": "[2606:4700:3030::6815:5001]",
             "port": 443,
             "users": [
               {
@@ -550,16 +530,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/gt3HmQvjX9pikM1D/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/0bZeLt379CqYVOav/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -568,7 +546,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360FF-CoLd-heaRT-85B9.ALI-R-MODp.WoRkerS.deV"
+          "serverName": "8E6360fF-COLD-heART-85b9.aLi-r-MODP.WOrKeRs.dEV"
         }
       },
       "tag": "prox-11"
@@ -578,8 +556,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "port": 2053,
+            "address": "[2606:4700:3030::6815:1001]",
+            "port": 443,
             "users": [
               {
                 "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
@@ -594,16 +572,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/lVilXWrEXYi0mfXY/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/YaVSnF9aVeFJr87V/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -612,7 +588,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-COLD-HEaRT-85b9.AlI-r-MODp.wORkErS.Dev"
+          "serverName": "8E6360Ff-cOLd-hEARt-85B9.ALI-r-MoDP.workers.deV"
         }
       },
       "tag": "prox-12"
@@ -622,8 +598,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "www.speedtest.net",
-            "port": 2053,
+            "address": "[2606:4700:3030::6815:2001]",
+            "port": 443,
             "users": [
               {
                 "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
@@ -638,16 +614,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/xTq1IXaU9qXxVS2o/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/T5EI1GhjvgSIwvng/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -656,7 +630,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-cOLd-heaRT-85b9.Ali-r-modP.WOrkerS.dEv"
+          "serverName": "8E6360Ff-coLd-hEArT-85b9.AlI-r-mOdp.wORkeRS.DEv"
         }
       },
       "tag": "prox-13"
@@ -666,8 +640,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.48.1",
-            "port": 2053,
+            "address": "[2606:4700:3030::6815:7001]",
+            "port": 443,
             "users": [
               {
                 "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
@@ -682,16 +656,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/23Xts1kGgY32laqh/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/tj4M5oJTtrZgQRve/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -700,7 +672,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360Ff-Cold-HEART-85B9.Ali-R-mODP.woRKErs.DEv"
+          "serverName": "8e6360ff-cOLD-HeArt-85b9.alI-r-MOdp.wOrKers.DEv"
         }
       },
       "tag": "prox-14"
@@ -710,8 +682,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.112.1",
-            "port": 2053,
+            "address": "[2606:4700:3030::6815:3001]",
+            "port": 443,
             "users": [
               {
                 "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
@@ -726,16 +698,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/XM9f8z2Y0cv4lcPs/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/ljNTUlMfAFm2rn4I/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -744,7 +714,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360ff-coLD-HeaRT-85B9.Ali-R-mODp.WOrKERS.DeV"
+          "serverName": "8e6360FF-COlD-HEArT-85B9.ALi-R-MoDp.woRkerS.dEv"
         }
       },
       "tag": "prox-15"
@@ -754,8 +724,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "104.21.80.1",
-            "port": 2053,
+            "address": "[2606:4700:3030::6815:4001]",
+            "port": 443,
             "users": [
               {
                 "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
@@ -770,16 +740,14 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
           },
-          "path": "/bY7FjP8T6zwAuJ2N/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/Ppl3lSO03K6038Md/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -788,25 +756,20 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360Ff-CoLD-HEArT-85b9.alI-r-mODp.woRkeRS.DEV"
+          "serverName": "8e6360Ff-cOlD-HEarT-85b9.alI-r-ModP.wORkeRS.dEV"
         }
       },
       "tag": "prox-16"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.21.64.1",
-            "port": 2053,
-            "users": [
-              {
-                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
           }
         ]
       },
@@ -814,16 +777,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/vKiobFxB57s3bJUf/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trM7qBSJL8faZmG49v/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -832,25 +792,20 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360Ff-COlD-HeArT-85B9.aLi-r-modP.workERs.dev"
+          "serverName": "8e6360Ff-cOLd-hEart-85b9.AlI-r-mODp.workERS.DEv"
         }
       },
       "tag": "prox-17"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.21.32.1",
-            "port": 2053,
-            "users": [
-              {
-                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "address": "www.speedtest.net",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
           }
         ]
       },
@@ -858,16 +813,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/8bNT3QAMx4Vfh9FW/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trTh2WbwA29pl0nYko/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -876,25 +828,20 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360fF-coLD-hEArT-85B9.Ali-R-MODP.WoRKerS.deV"
+          "serverName": "8E6360fF-coLD-HEART-85b9.ALi-r-MOdP.WorkErS.dev"
         }
       },
       "tag": "prox-18"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.21.16.1",
-            "port": 2053,
-            "users": [
-              {
-                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "address": "104.21.32.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
           }
         ]
       },
@@ -902,16 +849,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/YLFxpfZKDnU8XHit/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trB3T7RqPFGs0sd6oE/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -920,25 +864,20 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360fF-Cold-HeArt-85B9.AlI-r-modP.WorKeRs.dev"
+          "serverName": "8E6360Ff-ColD-hearT-85B9.ALi-R-mOdp.WORKeRS.DEv"
         }
       },
       "tag": "prox-19"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
             "address": "104.21.96.1",
-            "port": 2053,
-            "users": [
-              {
-                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
           }
         ]
       },
@@ -946,16 +885,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/nD3HKzapDN1eHT7u/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/tr5D8jeoL4Dah5P4kD/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -964,25 +900,20 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-cold-HearT-85b9.ALi-R-MoDP.WORkErS.DEv"
+          "serverName": "8E6360Ff-CoLd-hEaRt-85B9.aLi-r-mOdp.WORkERs.deV"
         }
       },
       "tag": "prox-20"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.16.0.113",
-            "port": 2053,
-            "users": [
-              {
-                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "address": "104.21.64.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
           }
         ]
       },
@@ -990,16 +921,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/hFixvvBg78V3Zn0A/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trxFQAOjelbbXFvLsb/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1008,25 +936,20 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360fF-CoLD-hEaRT-85b9.Ali-R-ModP.wOrKErs.Dev"
+          "serverName": "8e6360fF-cOlD-hEArT-85B9.aLi-r-MOdP.WOrKeRS.DEv"
         }
       },
       "tag": "prox-21"
     },
     {
-      "protocol": "vless",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "104.16.236.170",
-            "port": 2053,
-            "users": [
-              {
-                "id": "ffbad4c5-9dad-4120-b8c7-357f24a750d4",
-                "encryption": "none",
-                "level": 8
-              }
-            ]
+            "address": "104.21.112.1",
+            "port": 443,
+            "password": "DaDAShi_dOOsTAN",
+            "level": 8
           }
         ]
       },
@@ -1034,16 +957,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/PZgABQN02Ydhkbyg/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trEFgG6rnnzCn4jo2E/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1052,7 +972,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360FF-colD-hEArt-85B9.ALI-r-mODp.WORKErS.Dev"
+          "serverName": "8E6360Ff-ColD-HEart-85b9.Ali-r-moDP.WORKErS.DEv"
         }
       },
       "tag": "prox-22"
@@ -1062,7 +982,7 @@
       "settings": {
         "servers": [
           {
-            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
+            "address": "104.21.48.1",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1073,15 +993,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/tryN6TPbt7FZppaFxS/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/tryxxut8uLDYBgWczy/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1090,7 +1008,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360ff-CoLd-HEArt-85b9.aLi-R-MODp.woRkErS.DEv"
+          "serverName": "8e6360fF-coLD-HEaRT-85b9.ALI-R-MoDp.WorKErs.dEV"
         }
       },
       "tag": "prox-23"
@@ -1100,7 +1018,7 @@
       "settings": {
         "servers": [
           {
-            "address": "www.speedtest.net",
+            "address": "104.21.80.1",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1111,15 +1029,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trrIOXF6i9iFn104EK/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trQCbDVTfoTyzDUXBU/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1128,7 +1044,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360Ff-cOLd-hEArT-85B9.AlI-R-mOdP.WOrKeRS.DEV"
+          "serverName": "8e6360FF-cOLD-hEArT-85B9.AlI-r-MoDP.WOrKERs.dEV"
         }
       },
       "tag": "prox-24"
@@ -1138,7 +1054,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.48.1",
+            "address": "104.21.16.1",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1149,15 +1065,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trF4gARDC6Zab5pOBK/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trrzaHFbr73pIhk976/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1166,7 +1080,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-Cold-HEArT-85b9.ALI-R-ModP.WOrKErS.dEv"
+          "serverName": "8e6360FF-coLd-heArt-85b9.ali-r-mODp.WorKeRS.Dev"
         }
       },
       "tag": "prox-25"
@@ -1176,7 +1090,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.112.1",
+            "address": "[2606:4700:3030::6815:6001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1187,15 +1101,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trApblD1XgrhjUe8vH/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trfgV6ohQSX5XreIPu/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1204,7 +1116,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360FF-coLd-HEARt-85B9.aLi-r-Modp.wOrkErS.DEv"
+          "serverName": "8E6360fF-COLD-HeaRT-85b9.ALI-r-MOdp.wOrKERs.dev"
         }
       },
       "tag": "prox-26"
@@ -1214,7 +1126,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.80.1",
+            "address": "[2606:4700:3030::6815:5001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1225,15 +1137,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/tryk5PTovdi4qtaghM/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trlQwKxmvJvykPoEw6/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1242,7 +1152,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360fF-coLd-heaRT-85b9.alI-r-moDp.wORKers.DeV"
+          "serverName": "8e6360fF-CoLd-HeaRt-85B9.Ali-r-mOdp.wOrKERs.DEv"
         }
       },
       "tag": "prox-27"
@@ -1252,7 +1162,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.64.1",
+            "address": "[2606:4700:3030::6815:1001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1263,15 +1173,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trBiqKCrOkAvYEF78e/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trCwmoZdpgC8iHd43W/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1280,7 +1188,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360ff-CoLd-HEarT-85b9.ALI-R-MODP.wOrkERS.dEv"
+          "serverName": "8e6360Ff-CoLd-hEart-85b9.ALI-R-mOdp.WORkeRs.DEV"
         }
       },
       "tag": "prox-28"
@@ -1290,7 +1198,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.32.1",
+            "address": "[2606:4700:3030::6815:2001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1301,15 +1209,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trroMdje2wrgEQmcwQ/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trnPORgQX1BR7BMkiu/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1318,7 +1224,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360fF-cOld-HEaRt-85B9.AlI-r-MODP.workErS.dev"
+          "serverName": "8e6360ff-CoLd-HeARt-85b9.alI-r-moDP.workers.Dev"
         }
       },
       "tag": "prox-29"
@@ -1328,7 +1234,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.16.1",
+            "address": "[2606:4700:3030::6815:7001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1339,15 +1245,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trDsMfWoNBrMO7cJD5/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/traT0YrWHRNF0F3MEj/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1356,7 +1260,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8e6360Ff-CoLD-hEaRt-85B9.Ali-r-MOdp.workErS.dEv"
+          "serverName": "8e6360Ff-cOLD-hEArT-85B9.aLi-r-mODP.WORkErs.Dev"
         }
       },
       "tag": "prox-30"
@@ -1366,7 +1270,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.21.96.1",
+            "address": "[2606:4700:3030::6815:3001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1377,15 +1281,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trmN4NdgTyqr6L2xP7/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/trYTwfOq09WVMP0AFV/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1394,7 +1296,7 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360Ff-coLd-HeARt-85b9.ALi-r-MOdp.woRKErs.deV"
+          "serverName": "8E6360FF-colD-HeaRT-85B9.ALi-r-MODP.woRKERS.DEV"
         }
       },
       "tag": "prox-31"
@@ -1404,7 +1306,7 @@
       "settings": {
         "servers": [
           {
-            "address": "104.16.0.113",
+            "address": "[2606:4700:3030::6815:4001]",
             "port": 443,
             "password": "DaDAShi_dOOsTAN",
             "level": 8
@@ -1415,15 +1317,13 @@
         "network": "ws",
         "security": "tls",
         "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
+          "dialerProxy": "fragment"
         },
         "wsSettings": {
           "headers": {
             "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
           },
-          "path": "/trf0z5PBP2i33RvENc/ODguMTk4LjE3Mi4yNQ==?ed=2560"
+          "path": "/tr9eFx4sCpcZNKAbov/ODQuMjM1LjE2OS4yMzQ=?ed=2560"
         },
         "tlsSettings": {
           "allowInsecure": false,
@@ -1432,466 +1332,28 @@
             "h2",
             "http/1.1"
           ],
-          "serverName": "8E6360fF-coLd-HEaRt-85b9.aLi-R-mOdp.wORKERs.dEv"
+          "serverName": "8E6360FF-Cold-hEaRt-85b9.ALi-R-MODP.WOrKERs.DEv"
         }
       },
       "tag": "prox-32"
     },
     {
-      "protocol": "trojan",
+      "tag": "fragment",
+      "protocol": "freedom",
       "settings": {
-        "servers": [
-          {
-            "address": "104.16.236.170",
-            "port": 443,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
+        "fragment": {
+          "packets": "tlshello",
+          "length": "499-500",
+          "interval": "1-2"
+        },
+        "domainStrategy": "UseIPv4v6"
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
         "sockopt": {
           "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trc7JbmJF1JU1cd5Fy/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360Ff-CoLD-hEaRT-85B9.AlI-R-MoDp.wOrKeRs.Dev"
+          "tcpNoDelay": true
         }
-      },
-      "tag": "prox-33"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trK73acHj22rRoVY5v/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8e6360ff-COld-HeArt-85B9.AlI-R-MOdp.woRKerS.dEV"
-        }
-      },
-      "tag": "prox-34"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "www.speedtest.net",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trjIf5TjK4BJj6lTak/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360fF-cOld-HeaRT-85B9.ALI-R-ModP.WORkErs.DEv"
-        }
-      },
-      "tag": "prox-35"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.48.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trIifaDr69x4NoYVmM/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360Ff-ColD-hEArT-85B9.Ali-R-mOdP.workErS.dev"
-        }
-      },
-      "tag": "prox-36"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.112.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trlGBB7jIggZyB6HpA/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8e6360ff-COld-heArt-85B9.ALI-r-mOdP.WorKErS.Dev"
-        }
-      },
-      "tag": "prox-37"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.80.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trm4knKZ8tMkBkvLtq/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8e6360Ff-cOlD-hEaRt-85b9.AlI-r-modP.WorKERs.Dev"
-        }
-      },
-      "tag": "prox-38"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.64.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trA0XV6lw8k5XyAdnI/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360FF-cOLD-hEART-85b9.Ali-R-mOdp.WOrkERS.DEv"
-        }
-      },
-      "tag": "prox-39"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.32.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trc7g7TH6qynltgoCz/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360fF-cOLD-hearT-85B9.ali-r-mOdp.WorKErs.dev"
-        }
-      },
-      "tag": "prox-40"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.16.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trdHlANlB0o5qdW7w1/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360ff-COLD-heaRt-85B9.alI-r-mODP.WorKERs.dEV"
-        }
-      },
-      "tag": "prox-41"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.21.96.1",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/triJgwkPa4bziZoA2z/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8e6360ff-COlD-HEart-85b9.Ali-R-moDP.WorKeRS.Dev"
-        }
-      },
-      "tag": "prox-42"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.0.113",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trj5AnDGoga0xCNmqx/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8E6360FF-coLd-HeART-85B9.AlI-R-mOdP.woRKERS.deV"
-        }
-      },
-      "tag": "prox-43"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.16.236.170",
-            "port": 2053,
-            "password": "DaDAShi_dOOsTAN",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "tcpKeepAliveIdle": 30,
-          "tcpNoDelay": true,
-          "domainStrategy": "UseIPv4"
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "8e6360ff-cold-heart-85b9.ali-r-modp.workers.dev"
-          },
-          "path": "/trYthv8tr3tT5Hn7nX/ODguMTk4LjE3Mi4yNQ==?ed=2560"
-        },
-        "tlsSettings": {
-          "allowInsecure": false,
-          "fingerprint": "randomized",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "serverName": "8e6360fF-ColD-hEart-85b9.ALi-R-MOdP.WorkeRS.deV"
-        }
-      },
-      "tag": "prox-44"
+      }
     },
     {
       "protocol": "dns",
